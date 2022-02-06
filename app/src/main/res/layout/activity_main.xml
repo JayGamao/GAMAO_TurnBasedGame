@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map"
+    android:clickable="true"
+    android:scaleType="fitXY"
+    android:textColor="@color/white"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/enemyHp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enemy HP"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/enemyMagCapacity"
+        app:layout_constraintTop_toTopOf="@+id/heroHp" />
+
+    <TextView
+        android:id="@+id/heroHp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="MY HP"
+        app:layout_constraintStart_toStartOf="@+id/heroMagCapacity"
+        app:layout_constraintTop_toBottomOf="@+id/heroMagCapacity" />
+
+    <TextView
+        android:id="@+id/enemyGun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="M1A4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/heroGun"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/heroGun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="150dp"
+        android:text="Ak47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/heroMagCapacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Mag Capacity"
+        app:layout_constraintStart_toStartOf="@+id/heroFireRate"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/heroFireRate" />
+
+    <TextView
+        android:id="@+id/enemyFireRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fire Rate"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/enemyGun"
+        app:layout_constraintTop_toTopOf="@+id/heroFireRate" />
+
+    <TextView
+        android:id="@+id/heroFireRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Fire Rate: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/heroGun"
+        app:layout_constraintTop_toBottomOf="@+id/heroGun" />
+
+    <TextView
+        android:id="@+id/enemyMagCapacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mag Capacity"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/enemyFireRate"
+        app:layout_constraintTop_toTopOf="@+id/heroMagCapacity" />
+
+    <Button
+        android:id="@+id/btnActivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Fire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <TextView
+        android:id="@+id/combatLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Combat Log"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActivate"
+        app:layout_constraintVertical_bias="0.5" />
+    <ImageButton
+        android:id="@+id/flashBang"
+        android:layout_width="121dp"
+        android:layout_height="110dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:text="Flash Bang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heroHp"
+        app:layout_constraintVertical_bias="0.066"
+        app:srcCompat="@drawable/flashbang" />
+
+    <ImageView
+        android:id="@+id/ak47imagegun"
+        android:layout_width="188dp"
+        android:layout_height="127dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ak47" />
+
+    <ImageView
+        android:id="@+id/m1a4imagegun"
+        android:layout_width="188dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toEndOf="@+id/ak47imagegun"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m1a4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
