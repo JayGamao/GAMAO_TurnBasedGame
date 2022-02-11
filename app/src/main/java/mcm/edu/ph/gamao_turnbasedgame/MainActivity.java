@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
                     if (disabledstatus== true) {
-                        txtcombatLog.setText("Enemy is blinded for " + String.valueOf(statuscounter)+" shots");
+                        txtcombatLog.setText("Enemy is blinded for " + String.valueOf(statuscounter)+" shots and dealt" + (String.valueOf(heroGunName) + " dealt " + ak47probability + " damage to the enemy."));
                         statuscounter--;
                         enemyHp = enemyHp - ak47probability;
                         m1a4Hp.setText(String.valueOf(hp) + (String.valueOf(enemyHp)));
