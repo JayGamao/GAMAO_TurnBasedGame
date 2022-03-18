@@ -113,20 +113,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnActivate"
         app:layout_constraintVertical_bias="0.5" />
+
     <ImageButton
         android:id="@+id/flashBang"
         android:layout_width="121dp"
         android:layout_height="110dp"
         android:clickable="true"
+        android:padding="1dp"
         android:scaleType="fitXY"
         android:text="Flash Bang"
-        android:padding="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heroHp"
-        app:layout_constraintVertical_bias="0.066"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421"
         app:srcCompat="@drawable/flashbang" />
 
     <ImageView
